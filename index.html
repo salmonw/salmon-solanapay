@@ -121,7 +121,7 @@
       launchButton.addEventListener('click', () => {
         const recipient = document.getElementById('recipient').value;
         const label = document.getElementById('label').value;
-        const pattern = /^[13456789abcdefghijkmnopqrstuwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ]+$/;
+        const pattern = /^[1234567890abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ]+$/;
         if (!pattern.test(recipient) || recipient.length !== 44) {
           alert('Invalid recipient address');
           return;
